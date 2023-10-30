@@ -1,0 +1,21 @@
+
+<%- include("partials/header"); -%>
+
+
+    <h1><%=post.title%></h1>
+    <p><%=post.content%></p>
+    <form class="" action="/edit/<%=post._id%>" method="post">
+        <button class="btn btn-primary" type="submit" name="button">Update</button>
+    
+    </form>
+  <br>
+  <br>
+    <form class="" action="/delete/<%=post._id%>?_method=DELETE" method="post">
+        <button class="btn btn-primary" type="submit" name="button">Delete</button>
+    
+    </form>
+   
+
+
+
+<%- include("partials/footer"); -%>

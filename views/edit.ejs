@@ -1,0 +1,29 @@
+
+<!-- <%- include("partials/header"); -%>
+
+<form action="/edit/<%=post.id%>?_method=PUT" method="post" >
+
+<textarea name="editedpost" cols="30" rows="10">
+    <%=post.content%>
+</textarea>
+<button type="submit">update post</button>
+
+</form>
+
+<%- include("partials/footer"); -%> -->
+
+
+<%- include("partials/header"); -%>
+    <h1>Edit</h1>
+    <form class="" action="/edit/<%=post.id%>?_method=PUT" method="post">
+      <div class="form-group">
+        
+        <textarea class="form-control" name="editedpost" rows="5" cols="30"><%=post.content%></textarea>
+      </div>
+      <button class="btn btn-primary" type="submit" name="button">Update</button>
+    </form>
+
+<%- include("partials/footer"); -%>
+
+
+
